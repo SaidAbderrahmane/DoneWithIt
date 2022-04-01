@@ -10,27 +10,15 @@ import {
   Platform,
   StatusBar,
 } from "react-native"
-import ViewimageScreen from "./app/screens/ViewImageScreen"
+import AppButton from "./app/components/AppButton"
 import WelcomeScreen from "./app/screens/WelcomeScreen"
+import Card from "./app/components/Card"
+import ListingDetailsScreen from "./app/screens/ListingDetailsScreen"
+import ViewimageScreen from "./app/screens/ViewImageScreen"
 
 export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    ></View>
+    <ListingDetailsScreen />
   )
 }
-
-// create a component for rendering list
-/* 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-  },
-}) */
+ 
